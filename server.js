@@ -9,7 +9,7 @@ const port = 8888;
 const MOVIES_FILE = path.join(__dirname, 'data', 'movies.json');
 
 app.use(cors());
-app.use(bodyParser.json());
+app.use(express.json());
 app.use(express.static(path.join(__dirname, 'client', 'public')));
 
 const readMovies = async () => {
