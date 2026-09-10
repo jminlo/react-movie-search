@@ -30,17 +30,63 @@ A full-stack academic web application for browsing, filtering, and adding movie 
 
 ## Running locally
 
-Install and start the server:
+The API and React client run in separate terminals.
+
+### Windows PowerShell
+
+Terminal 1 — API server:
+
+```powershell
+npm install
+npm start
+```
+
+Terminal 2 — React client:
+
+```powershell
+cd client
+npm install
+npm start
+```
+
+### macOS or Linux
+
+Terminal 1 — API server:
 
 ```bash
 npm install
 npm start
 ```
 
-In another terminal, install and start the client:
+Terminal 2 — React client:
 
 ```bash
 cd client
+npm install
+npm start
+```
+
+The client opens at `http://localhost:3000`.
+
+### Fixing an existing client installation
+
+If you previously installed the client and receive an ESLint or `jest/globals` error, reinstall its dependencies.
+
+Windows PowerShell:
+
+```powershell
+cd client
+Remove-Item -Recurse -Force node_modules
+Remove-Item -Force package-lock.json -ErrorAction SilentlyContinue
+npm install
+npm start
+```
+
+macOS or Linux:
+
+```bash
+cd client
+rm -rf node_modules package-lock.json
 npm install
 npm start
 ```
