@@ -1,0 +1,97 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+/* General Page Styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #F3EAF4;
+  color: #333;
+  margin: 0;
+  padding: 20px;
+}
+
+/* Header Styling */
+h1 {
+  color: #8F9491;
+  text-align: center;
+  font-size: 2.5em;
+}
+
+h2 {
+  color: #BCA3AC;
+  text-align: center;
+}
+
+/* Form Section */
+form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px auto;
+  max-width: 800px;
+  padding: 15px;
+  background-color: #EADDE1;
+  border: 1px solid #BCA3AC;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+form input[type="text"],
+form input[type="number"],
+form button {
+  padding: 8px 10px;
+  border: 1px solid #BCA3AC;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+form input[type="text"],
+form input[type="number"] {
+  flex: 1;
+  background-color: #F3EAF4;
+  color: #333;
+}
+
+form button {
+  background-color: #BCA3AC;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #8F9491;
+    color: white;
+}
+
+/* Movie List Section */
+ul {
+  list-style-type: none;
+  padding: 0;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+ul li {
+  background-color: #E5CEDC;
+  margin: 10px 0;
+  padding: 12px 15px;
+  border-left: 5px solid #BCA3AC;
+  border-radius: 5px;
+  font-size: 1.1em;
+  color: #333;
+  transition: transform 0.2s;
+}
+
+ul li:hover {
+  background-color: #EADDE1;
+  border-left-color: #8F9491;
+}

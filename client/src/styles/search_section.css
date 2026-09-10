@@ -1,0 +1,29 @@
+/* Input Search Bars */
+.search-section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .search-section input,
+  .search-section button {
+    padding: 8px 10px;
+    border: 1px solid #BCA3AC;
+    border-radius: 5px;
+    background-color: #F3EAF4;
+    color: #333;
+  }
+  
+  .search-section button {
+    background-color: #BCA3AC;
+    color: white;
+    transition: background-color 0.3s;
+    cursor: pointer;
+  }
+  
+  .search-section button:hover {
+    background-color: #8F9491;
+    color: white;
+  }
