@@ -24,12 +24,13 @@ A full-stack academic web application for browsing, filtering, and adding movie 
 ## Repository structure
 
 - `client/` - React user interface
-- `server/` - Express server and movie dataset
+- `server.js` - Express application and API endpoints
+- `data/` - movie dataset used by the server
 - `sample-data/` - compact data used for testing
 
 ## Running locally
 
-Install the server dependencies:
+Install and start the server:
 
 ```bash
 npm install
